@@ -215,10 +215,7 @@ a.header__phoneLink {
 }
 
 .catProd__section {
-  /* display: flex; */
-  flex-wrap: wrap;
   width: 100%;
-  /* background: #e7e7e7; */
 }
 
 .catProd__section_half {
