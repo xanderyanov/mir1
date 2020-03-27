@@ -33,6 +33,7 @@ header.header {
 
 .logo1 {
   display: flex;
+  /* width: 20%; */
 }
 
 .logo1 a {
@@ -49,65 +50,94 @@ header.header {
 .header__info {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-
+  justify-content: center;
+  width: 80%;
 }
 
-.header__topInfoItem {
+.header__infoTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header__infoTopItem {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header__infoTopItem i {
+  margin-right: 5px;
+  font-size: 1.75rem;
+  color: #f86300;
+}
+
+
+.header__infoTopItem a {
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.header__infoTopItem a:hover {
+  color: #f86300;
+}
+
+
+
+
+.header__infoBottom {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.header__contInfo {
+  display: flex;
+}
+
+
+.header__contInfoItem {
   display: flex;
   align-items: center;
   margin-right: 20px;
 }
 
-.header__topInfoItem:last-child {
+.header__contInfoItem:last-child {
   margin-right: 0;
 }
 
-.header__topInfoItem_big {
-  margin-left: 20px;
-}
-
-.header__topInfoItem i {
+.header__contInfoItem i {
   font-size: 1rem;
   margin-right: 5px;
   color: #f86300;
 }
 
-.header__topInfoItem_big i {
-  font-size: 1.75rem;
-  color: #f86300;
-}
-
-.header__topInfoItem span {
+.header__contInfoItem span {
   font-size: .875rem;
   color: #000;
 }
 
-.header__topInfoItem a {
+.header__contInfoItem a {
   font-size: .875rem;
   color: #000;
   text-decoration: none;
   transition: all .3s;
 }
 
-.header__topInfoItem a:hover {
+.header__contInfoItem a:hover {
   color: #f86300;
 }
 
-.header__topInfo {
-  display: flex;
-  margin-bottom: 15px;
-}
 
-a.header__phoneLink {
-  font-size: 1.5rem;
-}
 
 .header__socLinks {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-bottom: 10px;
+  margin-left: auto;
 }
 
 .header__socLinks a {
@@ -296,6 +326,7 @@ a.header__phoneLink {
   margin-right: auto;
   transition: all .3s;
   background: transparent;
+  border-radius: 4px;
 }
 
 .catProd__itemLink_white {
@@ -306,5 +337,5 @@ a.header__phoneLink {
 .catProd__itemLink:hover {
   color: #f86300;
   border: 2px solid #f86300;
-  background: #fff;
+  background: rgba(255, 255, 255, .8);
 }
